@@ -1,0 +1,30 @@
+/*footer*/
+$azul-cp:#455561;
+
+footer {
+    background-color: #455561;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    grid-area: footer;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+            font-size: 1rem;
+            color: antiquewhite;
+            font-family: 'Yanone Kaffeesatz', sans-serif;         
+        }
+    }    
+}
+.wpp {
+    display: inline-block;
+    position: sticky;
+    background-color: $azul-cp;
+    width: 3.6rem;
+}

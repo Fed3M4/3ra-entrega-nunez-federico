@@ -1,0 +1,61 @@
+/*estilos pantalla completa*/
+@media (min-width: 600px) {
+    /*header*/
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: #EA6523;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem;
+        width: 100%;
+        h1 {
+            font-size: 2.5rem;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: bold;
+        }
+        a img {
+            height: 3.3rem;
+        }  
+    }  
+    /*main*/
+    main {
+        .mainIndex {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            .imagenIndex {
+                display: block;
+                width: 600px;
+                .loguito {
+                    width: 70%;
+                }
+            
+            } 
+        .mainAccesos {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }       
+        }
+        .lobby {
+            padding: 0;
+            width: 70%;
+            h2 {
+                border-radius: 3px 3px 3px;
+            }
+            .carru{
+                width: 90%;
+            }
+        }
+    }
+    footer {
+        ul li {
+            font-size: 1.5rem;
+        }    
+    }
+}

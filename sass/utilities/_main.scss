@@ -1,0 +1,144 @@
+/*estilos main mobile*/
+/*login*/
+$azul-cp:#455561;
+main {
+    padding: 1rem 0rem 1rem 0rem;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+        div {
+        .imagenIndex {
+            display: none;
+            width: auto;
+        }
+        aside {
+            display: flex;
+            z-index: 10;
+            text-align: center;
+            .formulario {
+                display: grid;
+                grid-template-columns: 5fr 5fr;
+                grid-template-rows: repeat(6, 2fr);
+                grid-template-areas: 
+                "usuario usuario"
+                "contraseña contraseña"
+                "recordarme recordarme"
+                "div div"
+                "invitado invitado"
+                "recuperar recuperar";
+                width: 100%;
+                gap: 1rem;
+                input,  label, div input, a input, .recuperar {
+                    font-size: 1.5rem;
+                    padding: 0.4rem;
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    width: max-content;
+                }
+                .usuario {
+                    grid-area: usuario;
+                }
+                .contraseña {
+                    grid-area: contraseña;
+                }
+                .formulario label {
+                    grid-area: recordarme;
+                }
+                .div {
+                    grid-area: div;
+                }
+                .botonInvitado {
+                    grid-area: invitado;
+                }
+                .recuperar {
+                    grid-area: recuperar;
+                }
+                div input, a input {
+                    letter-spacing: 0.1rem;
+                    background-color: $azul-cp;
+                    color: antiquewhite;
+                    box-shadow: 2px 2px 5px black;
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    border-radius: 5px;
+                }
+                div input:hover, a input:hover {
+                    background-color: cornflowerblue;
+                }
+            }
+        }
+    }
+}
+
+/*estilos index*/
+
+main div {
+    span {
+        display: flex;
+        justify-content: center;
+        a .boton {
+            background-color:$azul-cp;
+            padding: 0.4rem 1rem 0.4rem 1rem;
+            border: 2px solid black;
+            font-weight: bold;
+            color: antiquewhite;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            margin: 0.5rem;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer
+        }
+        .boton:hover {
+            background-color: cornflowerblue;
+        }
+    }    
+    h2 {
+    font-size: 1.2rem;
+    background-color: $azul-cp;
+    color: aliceblue;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+
+}
+}
+
+/*estilos de los accesos*/
+.mainAccesos {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    h2 {
+        width: 100%;
+    }
+    ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+        li {
+            width: 25rem;
+            padding: 3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color:$azul-cp;
+            border-radius: 5px 5px 5px;
+            a {
+                text-decoration: none;
+            }
+            img {
+                height: 5rem;
+            }
+            
+        }  
+    }  
+}

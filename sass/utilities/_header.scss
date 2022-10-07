@@ -1,0 +1,16 @@
+/*estilos header mobile*/
+$naranja-cp: #EA6523;
+header {
+    display: block;
+    background-color: $naranja-cp;
+    z-index: 10;
+    width: auto;
+    grid-area: header;
+    h1 {
+        font-size: 1rem;
+        color: antiquewhite;
+    }
+    a img {
+        height: 2rem;
+    }
+}

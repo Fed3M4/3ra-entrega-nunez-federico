@@ -1,0 +1,26 @@
+/*body*/
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(233, 221, 204);
+    background-image: url(../CSS/img/adsakldja.png);
+    background-position:center;
+    background-size: 25%;
+    background-repeat: repeat;
+}
+
+.contenedorIndex, .contenedorAccesos, .contenedorBody{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 1.2fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(233, 221, 204);
+    background-image: url(../CSS/img/adsakldja.png);
+    background-position:center;
+    background-size: 25%;
+    background-repeat: repeat;
+}

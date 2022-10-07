@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*body*/
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #e9ddcc;
+  background-image: url(../CSS/img/adsakldja.png);
+  background-position: center;
+  background-size: 25%;
+  background-repeat: repeat; }
+
+.contenedorIndex, .contenedorAccesos, .contenedorBody {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 7fr 1.2fr;
+  grid-template-areas: "header" "main" "footer";
+  font-family: 'Oswald', sans-serif;
+  background-color: #e9ddcc;
+  background-image: url(../CSS/img/adsakldja.png);
+  background-position: center;
+  background-size: 25%;
+  background-repeat: repeat; }
+
+/*estilos header mobile*/
+header {
+  display: block;
+  background-color: #EA6523;
+  z-index: 10;
+  width: auto;
+  grid-area: header; }
+  header h1 {
+    font-size: 1rem;
+    color: antiquewhite; }
+  header a img {
+    height: 2rem; }
+
+/*estilos main mobile*/
+/*login*/
+main {
+  padding: 1rem 0rem 1rem 0rem;
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  main div .imagenIndex {
+    display: none;
+    width: auto; }
+  main div aside {
+    display: flex;
+    z-index: 10;
+    text-align: center; }
+    main div aside .formulario {
+      display: grid;
+      grid-template-columns: 5fr 5fr;
+      grid-template-rows: repeat(6, 2fr);
+      grid-template-areas: "usuario usuario" "contraseña contraseña" "recordarme recordarme" "div div" "invitado invitado" "recuperar recuperar";
+      width: 100%;
+      gap: 1rem; }
+      main div aside .formulario input, main div aside .formulario label, main div aside .formulario div input, main div aside .formulario a input, main div aside .formulario .recuperar {
+        font-size: 1.5rem;
+        padding: 0.4rem;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        width: max-content; }
+      main div aside .formulario .usuario {
+        grid-area: usuario; }
+      main div aside .formulario .contraseña {
+        grid-area: contraseña; }
+      main div aside .formulario .formulario label {
+        grid-area: recordarme; }
+      main div aside .formulario .div {
+        grid-area: div; }
+      main div aside .formulario .botonInvitado {
+        grid-area: invitado; }
+      main div aside .formulario .recuperar {
+        grid-area: recuperar; }
+      main div aside .formulario div input, main div aside .formulario a input {
+        letter-spacing: 0.1rem;
+        background-color: #455561;
+        color: antiquewhite;
+        box-shadow: 2px 2px 5px black;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        border-radius: 5px; }
+      main div aside .formulario div input:hover, main div aside .formulario a input:hover {
+        background-color: cornflowerblue; }
+
+/*estilos index*/
+main div span {
+  display: flex;
+  justify-content: center; }
+  main div span a .boton {
+    background-color: #455561;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border: 2px solid black;
+    font-weight: bold;
+    color: antiquewhite;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0.5rem;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer; }
+  main div span .boton:hover {
+    background-color: cornflowerblue; }
+
+main div h2 {
+  font-size: 1.2rem;
+  background-color: #455561;
+  color: aliceblue;
+  padding: 1rem;
+  width: 100%;
+  text-align: center; }
+
+/*estilos de los accesos*/
+.mainAccesos {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%; }
+  .mainAccesos h2 {
+    width: 100%; }
+  .mainAccesos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem; }
+    .mainAccesos ul li {
+      width: 25rem;
+      padding: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background-color: #455561;
+      border-radius: 5px 5px 5px; }
+      .mainAccesos ul li a {
+        text-decoration: none; }
+      .mainAccesos ul li img {
+        height: 5rem; }
+
+/*footer*/
+footer {
+  background-color: #455561;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  grid-area: footer;
+  font-family: 'Oswald', sans-serif;
+  align-items: center; }
+  footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer ul li {
+      font-size: 1rem;
+      color: antiquewhite;
+      font-family: 'Yanone Kaffeesatz', sans-serif; }
+
+.wpp {
+  display: inline-block;
+  position: sticky;
+  background-color: #455561;
+  width: 3.6rem; }
+
+/*estilos pantalla completa*/
+@media (min-width: 600px) {
+  /*header*/
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #EA6523;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    width: 100%; }
+    header h1 {
+      font-size: 2.5rem;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-weight: bold; }
+    header a img {
+      height: 3.3rem; }
+  /*main*/
+  main .mainIndex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+    main .mainIndex .imagenIndex {
+      display: block;
+      width: 600px; }
+      main .mainIndex .imagenIndex .loguito {
+        width: 70%; }
+    main .mainIndex .mainAccesos {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+  main .lobby {
+    padding: 0;
+    width: 70%; }
+    main .lobby h2 {
+      border-radius: 3px 3px 3px; }
+    main .lobby .carru {
+      width: 90%; }
+  footer ul li {
+    font-size: 1.5rem; } }
