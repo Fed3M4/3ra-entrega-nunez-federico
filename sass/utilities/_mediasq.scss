@@ -10,10 +10,8 @@
         align-items: center;
         padding: 0.8rem;
         width: 100%;
-        h1 {
-            font-size: 2.5rem;
-            font-family: 'Yanone Kaffeesatz', sans-serif;
-            font-weight: bold;
+        nav div h1 {
+            font-size: 2rem;
         }
         a img {
             height: 3.3rem;
@@ -52,6 +50,39 @@
                 width: 90%;
             }
         }
+        .mainContacto {
+            display: grid;
+            grid-template-columns: 1.8fr 2fr;
+            grid-template-rows: 2fr;
+            grid-template-areas: 
+            "div2 aside2";
+            div {
+                grid-area: div2;
+                .divContacto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-self: center;
+                    gap: 2rem;
+                    video {
+                        display: block;
+                    }
+                    span {
+                        margin: 1rem;
+                        border-radius: 5px 5px 5px;
+                        p {
+                            font-size: 1.25rem;
+                            text-align: justify;  
+                            color: antiquewhite;
+                        }
+                    }
+                }
+            }
+            aside {
+                grid-area: aside2;
+                text-align: start;
+            }
+        }
     }
     footer {
         ul li {
@@ -59,3 +90,4 @@
         }    
     }
 }
+   

@@ -13,12 +13,13 @@ footer {
     ul {
         list-style: none;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
         li {
             font-size: 1rem;
             color: antiquewhite;
-            font-family: 'Yanone Kaffeesatz', sans-serif;         
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            height: 100%;
         }
     }    
 }

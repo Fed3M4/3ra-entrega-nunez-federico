@@ -2,7 +2,7 @@
 /*login*/
 $azul-cp:#455561;
 main {
-    padding: 1rem 0rem 1rem 0rem;
+    /*padding: 1rem 0rem 1rem 0rem;*/
     grid-area: main;
     display: flex;
     align-items: center;
@@ -141,4 +141,17 @@ main div {
             
         }  
     }  
+}
+.mainContacto {
+    div .divContacto {
+        video {
+            display: none;
+        }
+        span {
+            padding: 1rem;
+            color: aliceblue;
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: #878e94;
+        }
+    }
 }

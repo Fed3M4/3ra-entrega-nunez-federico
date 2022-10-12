@@ -7,7 +7,6 @@
 
 /*body*/
 body {
-  font-family: 'Oswald', sans-serif;
   background-color: #e9ddcc;
   background-image: url(../CSS/img/adsakldja.png);
   background-position: center;
@@ -34,16 +33,19 @@ header {
   z-index: 10;
   width: auto;
   grid-area: header; }
-  header h1 {
-    font-size: 1rem;
-    color: antiquewhite; }
+  header nav div h1 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    text-align: center; }
   header a img {
     height: 2rem; }
 
 /*estilos main mobile*/
 /*login*/
 main {
-  padding: 1rem 0rem 1rem 0rem;
+  /*padding: 1rem 0rem 1rem 0rem;*/
   grid-area: main;
   display: flex;
   align-items: center;
@@ -149,6 +151,15 @@ main div h2 {
       .mainAccesos ul li img {
         height: 5rem; }
 
+.mainContacto div .divContacto video {
+  display: none; }
+
+.mainContacto div .divContacto span {
+  padding: 1rem;
+  color: aliceblue;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #878e94; }
+
 /*footer*/
 footer {
   background-color: #455561;
@@ -162,12 +173,13 @@ footer {
   footer ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center; }
     footer ul li {
       font-size: 1rem;
       color: antiquewhite;
-      font-family: 'Yanone Kaffeesatz', sans-serif; }
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      height: 100%; }
 
 .wpp {
   display: inline-block;
@@ -187,10 +199,8 @@ footer {
     align-items: center;
     padding: 0.8rem;
     width: 100%; }
-    header h1 {
-      font-size: 2.5rem;
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-      font-weight: bold; }
+    header nav div h1 {
+      font-size: 2rem; }
     header a img {
       height: 3.3rem; }
   /*main*/
@@ -217,5 +227,30 @@ footer {
       border-radius: 3px 3px 3px; }
     main .lobby .carru {
       width: 90%; }
+  main .mainContacto {
+    display: grid;
+    grid-template-columns: 1.8fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "div2 aside2"; }
+    main .mainContacto div {
+      grid-area: div2; }
+      main .mainContacto div .divContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        gap: 2rem; }
+        main .mainContacto div .divContacto video {
+          display: block; }
+        main .mainContacto div .divContacto span {
+          margin: 1rem;
+          border-radius: 5px 5px 5px; }
+          main .mainContacto div .divContacto span p {
+            font-size: 1.25rem;
+            text-align: justify;
+            color: antiquewhite; }
+    main .mainContacto aside {
+      grid-area: aside2;
+      text-align: start; }
   footer ul li {
     font-size: 1.5rem; } }
