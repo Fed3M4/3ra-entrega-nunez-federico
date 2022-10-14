@@ -262,5 +262,12 @@ footer {
     main .mainContacto aside {
       grid-area: aside2;
       text-align: start; }
+  footer ul .logos {
+    display: flex;
+    display: block;
+    flex-wrap: nowrap; }
+    footer ul .logos .rrss {
+      width: 3rem;
+      margin: 0 1rem; }
   footer ul li {
     font-size: 1.5rem; } }

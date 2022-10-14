@@ -86,9 +86,20 @@
         }
     }
     footer {
-        ul li {
+        ul{
+            .logos {
+                display: flex;
+                display: block;
+                flex-wrap: nowrap;
+                .rrss {
+                    width: 3rem;
+                    margin: 0 1rem;
+                }
+            }
+            li {
             font-size: 1.5rem;
-        }    
+            }  
+        }  
     }
 }
    
