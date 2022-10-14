@@ -19,7 +19,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 7fr 1.2fr;
   grid-template-areas: "header" "main" "footer";
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #e9ddcc;
   background-image: url(../CSS/img/adsakldja.png);
   background-position: center;
@@ -114,11 +114,12 @@ main div span {
 
 main div h2 {
   font-size: 1.2rem;
-  background-color: #455561;
+  background-color: #878e94;
   color: aliceblue;
   padding: 1rem;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif; }
 
 /*estilos de los accesos*/
 .mainAccesos {
@@ -173,13 +174,21 @@ footer {
   footer ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: flex-start; }
     footer ul li {
       font-size: 1rem;
       color: antiquewhite;
       font-family: 'Yanone Kaffeesatz', sans-serif;
       height: 100%; }
+    footer ul .logos {
+      display: flex;
+      display: block;
+      flex-wrap: nowrap; }
+      footer ul .logos .rrss {
+        width: 3rem;
+        margin: 0 1rem; }
 
 .wpp {
   display: inline-block;
@@ -219,7 +228,8 @@ footer {
       display: block;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      background-color: #878e94; }
   main .lobby {
     padding: 0;
     width: 70%; }
