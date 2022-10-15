@@ -79,7 +79,7 @@ main {
         grid-area: recordarme; }
       main div aside .formulario .div {
         grid-area: div; }
-      main div aside .formulario .botonInvitado {
+      main div aside .formulario .boton {
         grid-area: invitado; }
       main div aside .formulario .recuperar {
         grid-area: recuperar; }
