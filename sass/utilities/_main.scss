@@ -3,6 +3,7 @@
 $azul-cp:#455561;
 main {
     /*padding: 1rem 0rem 1rem 0rem;*/
+    margin-top: 3.6rem;
     grid-area: main;
     display: flex;
     align-items: center;
@@ -63,6 +64,7 @@ main {
                 }
                 div input:hover, a input:hover {
                     background-color: cornflowerblue;
+                    transform: scale(0.90);
                 }
             }
         }
@@ -92,6 +94,7 @@ main div {
         }
         .boton:hover {
             background-color: cornflowerblue;
+            transform: scale(0.90);
         }
     }    
     h2 {
@@ -126,8 +129,8 @@ main div {
     justify-content: space-evenly;
     gap: 3rem;
         li {
-            width: 25rem;
-            padding: 3rem;
+            width: 15rem;
+            padding: 1.5rem;
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -137,9 +140,12 @@ main div {
                 text-decoration: none;
             }
             img {
-                height: 5rem;
+                height: 3rem;
             }
             
+        }
+        li:hover {
+            transform: scale(1.15);
         }  
     }  
 }

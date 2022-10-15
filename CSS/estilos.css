@@ -29,9 +29,10 @@ body {
 /*estilos header mobile*/
 header {
   display: block;
+  position: fixed;
   background-color: #EA6523;
   z-index: 10;
-  width: auto;
+  width: 100%;
   grid-area: header; }
   header nav div h1 {
     font-size: 1.5rem;
@@ -46,6 +47,7 @@ header {
 /*login*/
 main {
   /*padding: 1rem 0rem 1rem 0rem;*/
+  margin-top: 3.6rem;
   grid-area: main;
   display: flex;
   align-items: center;
@@ -89,7 +91,8 @@ main {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         border-radius: 5px; }
       main div aside .formulario div input:hover, main div aside .formulario a input:hover {
-        background-color: cornflowerblue; }
+        background-color: cornflowerblue;
+        transform: scale(0.9); }
 
 /*estilos index*/
 main div span {
@@ -110,7 +113,8 @@ main div span {
     transition-duration: 0.4s;
     cursor: pointer; }
   main div span .boton:hover {
-    background-color: cornflowerblue; }
+    background-color: cornflowerblue;
+    transform: scale(0.9); }
 
 main div h2 {
   font-size: 1.2rem;
@@ -140,8 +144,8 @@ main div h2 {
     justify-content: space-evenly;
     gap: 3rem; }
     .mainAccesos ul li {
-      width: 25rem;
-      padding: 3rem;
+      width: 15rem;
+      padding: 1.5rem;
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -150,7 +154,9 @@ main div h2 {
       .mainAccesos ul li a {
         text-decoration: none; }
       .mainAccesos ul li img {
-        height: 5rem; }
+        height: 3rem; }
+    .mainAccesos ul li:hover {
+      transform: scale(1.15); }
 
 .mainContacto div .divContacto video {
   display: none; }
@@ -213,55 +219,61 @@ footer {
     header a img {
       height: 3.3rem; }
   /*main*/
-  main .mainIndex {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; }
-    main .mainIndex .imagenIndex {
-      display: block;
-      width: 600px; }
-      main .mainIndex .imagenIndex .loguito {
-        width: 70%; }
-    main .mainIndex .mainAccesos {
+  main {
+    margin-top: 0; }
+    main .mainIndex {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+      main .mainIndex .imagenIndex {
+        display: block;
+        width: 600px; }
+        main .mainIndex .imagenIndex .loguito {
+          width: 70%; }
+    main .mainAccesos {
       display: block;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      background-color: #878e94; }
-  main .lobby {
-    padding: 0;
-    width: 70%; }
-    main .lobby h2 {
-      border-radius: 3px 3px 3px; }
-    main .lobby .carru {
-      width: 90%; }
-  main .mainContacto {
-    display: grid;
-    grid-template-columns: 1.8fr 2fr;
-    grid-template-rows: 2fr;
-    grid-template-areas: "div2 aside2"; }
-    main .mainContacto div {
-      grid-area: div2; }
-      main .mainContacto div .divContacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-self: center;
-        gap: 2rem; }
-        main .mainContacto div .divContacto video {
-          display: block; }
-        main .mainContacto div .divContacto span {
-          margin: 1rem;
-          border-radius: 5px 5px 5px; }
-          main .mainContacto div .divContacto span p {
-            font-size: 1.25rem;
-            text-align: justify;
-            color: antiquewhite; }
-    main .mainContacto aside {
-      grid-area: aside2;
-      text-align: start; }
+      justify-content: space-between; }
+      main .mainAccesos ul li {
+        width: 25rem;
+        padding: 3rem; }
+        main .mainAccesos ul li img {
+          height: 5rem; }
+    main .lobby {
+      padding: 0;
+      width: 70%; }
+      main .lobby h2 {
+        border-radius: 3px 3px 3px; }
+      main .lobby .carru {
+        width: 90%; }
+    main .mainContacto {
+      display: grid;
+      grid-template-columns: 1.8fr 2fr;
+      grid-template-rows: 2fr;
+      grid-template-areas: "div2 aside2"; }
+      main .mainContacto div {
+        grid-area: div2; }
+        main .mainContacto div .divContacto {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-self: center;
+          gap: 2rem; }
+          main .mainContacto div .divContacto video {
+            display: block; }
+          main .mainContacto div .divContacto span {
+            margin: 1rem;
+            border-radius: 5px 5px 5px; }
+            main .mainContacto div .divContacto span p {
+              font-size: 1.25rem;
+              text-align: justify;
+              color: antiquewhite; }
+      main .mainContacto aside {
+        grid-area: aside2;
+        text-align: start; }
   footer ul .logos {
     display: flex;
     display: block;

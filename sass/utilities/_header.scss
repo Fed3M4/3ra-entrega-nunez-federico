@@ -2,9 +2,10 @@
 $naranja-cp: #EA6523;
 header {
     display: block;
+    position: fixed;
     background-color: $naranja-cp;
     z-index: 10;
-    width: auto;
+    width: 100%;
     grid-area: header;
     nav div h1 {
         font-size: 1.5rem;

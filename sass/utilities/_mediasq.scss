@@ -19,6 +19,7 @@
     }  
     /*main*/
     main {
+        margin-top: 0;
         .mainIndex {
             width: 100%;
             display: flex;
@@ -31,16 +32,21 @@
                 .loguito {
                     width: 70%;
                 }
-            
-            } 
+            }
+        }
         .mainAccesos {
             display: block;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: #878e94;
+            ul li {
+                width: 25rem;
+                padding: 3rem;
+                img {
+                    height: 5rem;
+                }
+            }
         }       
-        }
         .lobby {
             padding: 0;
             width: 70%;
