@@ -72,7 +72,9 @@ main {
         font-family: 'Yanone Kaffeesatz', sans-serif;
         width: max-content;
         border-radius: 6px;
-        border-color: #EA6523; }
+        color: black;
+        border-width: 1px;
+        border-color: gainsboro; }
       main div aside .formulario .usuario {
         grid-area: usuario; }
       main div aside .formulario .contraseña {
@@ -88,12 +90,13 @@ main {
       main div aside .formulario div input, main div aside .formulario a input {
         font-size: 1.25rem;
         background-color: #455561;
-        color: antiquewhite;
-        box-shadow: 2px 2px 5px black;
+        color: wheat;
+        box-shadow: 2px 2px 5px gray;
         font-family: 'Nunito Sans', sans-serif;
         border-radius: 8px; }
       main div aside .formulario div input:hover, main div aside .formulario a input:hover {
         background-color: #EA6523;
+        color: #e8e3e0;
         transform: scale(0.9); }
 
 /*estilos index*/

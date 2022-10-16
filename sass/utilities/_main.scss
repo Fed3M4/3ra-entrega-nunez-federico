@@ -36,7 +36,9 @@ main {
                     font-family: 'Yanone Kaffeesatz', sans-serif;
                     width: max-content;
                     border-radius: 6px;
-                    border-color: #EA6523;
+                    color: black;
+                    border-width: 1px;
+                    border-color: gainsboro;
                 }
                 .usuario {
                     grid-area: usuario;
@@ -59,13 +61,14 @@ main {
                 div input, a input {
                     font-size: 1.25rem;
                     background-color: $azul-cp;
-                    color: antiquewhite;
-                    box-shadow: 2px 2px 5px black;
+                    color: wheat;
+                    box-shadow: 2px 2px 5px gray;
                     font-family: 'Nunito Sans', sans-serif;
                     border-radius: 8px;
                 }
                 div input:hover, a input:hover {
                     background-color: #EA6523;
+                    color: #e8e3e0;
                     transform: scale(0.90);
                 }
             }
