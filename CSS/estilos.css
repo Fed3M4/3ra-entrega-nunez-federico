@@ -29,7 +29,7 @@ body {
 /*estilos header mobile*/
 header {
   display: block;
-  position: fixed;
+  /*position: fixed;*/
   background-color: #EA6523;
   z-index: 10;
   width: 100%;
@@ -70,7 +70,9 @@ main {
         font-size: 1.5rem;
         padding: 0.4rem;
         font-family: 'Yanone Kaffeesatz', sans-serif;
-        width: max-content; }
+        width: max-content;
+        border-radius: 6px;
+        border-color: #EA6523; }
       main div aside .formulario .usuario {
         grid-area: usuario; }
       main div aside .formulario .contraseña {
@@ -84,14 +86,14 @@ main {
       main div aside .formulario .recuperar {
         grid-area: recuperar; }
       main div aside .formulario div input, main div aside .formulario a input {
-        letter-spacing: 0.1rem;
+        font-size: 1.25rem;
         background-color: #455561;
         color: antiquewhite;
         box-shadow: 2px 2px 5px black;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        border-radius: 5px; }
+        font-family: 'Nunito Sans', sans-serif;
+        border-radius: 8px; }
       main div aside .formulario div input:hover, main div aside .formulario a input:hover {
-        background-color: cornflowerblue;
+        background-color: #EA6523;
         transform: scale(0.9); }
 
 /*estilos index*/
@@ -104,16 +106,12 @@ main div span {
     border: 2px solid black;
     font-weight: bold;
     color: antiquewhite;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.2rem;
-    letter-spacing: 2px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin: 0.5rem;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer; }
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0.5rem; }
   main div span .boton:hover {
-    background-color: cornflowerblue;
+    background-color: #EA6523;
     transform: scale(0.9); }
 
 main div h2 {
@@ -152,7 +150,8 @@ main div h2 {
       background-color: #455561;
       border-radius: 5px 5px 5px; }
       .mainAccesos ul li a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: white; }
       .mainAccesos ul li img {
         height: 3rem; }
     .mainAccesos ul li:hover {
@@ -172,7 +171,8 @@ main div h2 {
   margin: 2rem;
   border-radius: 8px;
   border-width: 5px;
-  background-color: #e8e3e0; }
+  background-color: #e8e3e0;
+  text-align: left; }
 
 /*footer*/
 footer {
@@ -200,7 +200,7 @@ footer {
       display: block;
       flex-wrap: nowrap; }
       footer ul .logos .rrss {
-        width: 3rem;
+        width: 2rem;
         margin: 0 1rem; }
 
 .wpp {

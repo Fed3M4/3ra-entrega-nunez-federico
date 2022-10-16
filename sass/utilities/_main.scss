@@ -35,6 +35,8 @@ main {
                     padding: 0.4rem;
                     font-family: 'Yanone Kaffeesatz', sans-serif;
                     width: max-content;
+                    border-radius: 6px;
+                    border-color: #EA6523;
                 }
                 .usuario {
                     grid-area: usuario;
@@ -55,15 +57,15 @@ main {
                     grid-area: recuperar;
                 }
                 div input, a input {
-                    letter-spacing: 0.1rem;
+                    font-size: 1.25rem;
                     background-color: $azul-cp;
                     color: antiquewhite;
                     box-shadow: 2px 2px 5px black;
-                    font-family: 'Yanone Kaffeesatz', sans-serif;
-                    border-radius: 5px;
+                    font-family: 'Nunito Sans', sans-serif;
+                    border-radius: 8px;
                 }
                 div input:hover, a input:hover {
-                    background-color: cornflowerblue;
+                    background-color: #EA6523;
                     transform: scale(0.90);
                 }
             }
@@ -83,17 +85,13 @@ main div {
             border: 2px solid black;
             font-weight: bold;
             color: antiquewhite;
-            border-radius: 5px;
+            border-radius: 8px;
             font-size: 1.2rem;
-            letter-spacing: 2px;
-            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             margin: 0.5rem;
-            -webkit-transition-duration: 0.4s;
-            transition-duration: 0.4s;
-            cursor: pointer
         }
         .boton:hover {
-            background-color: cornflowerblue;
+            background-color: #EA6523;
             transform: scale(0.90);
         }
     }    
@@ -138,6 +136,7 @@ main div {
             border-radius: 5px 5px 5px;
             a {
                 text-decoration: none;
+                color: white;
             }
             img {
                 height: 3rem;
@@ -167,5 +166,6 @@ main div {
         border-radius: 8px;
         border-width: 5px;
         background-color: #e8e3e0;
+        text-align: left;
     }
 }
