@@ -29,7 +29,7 @@ body {
 /*estilos header mobile*/
 header {
   display: block;
-  /*position: fixed;*/
+  position: fixed;
   background-color: #EA6523;
   z-index: 10;
   width: 100%;
@@ -46,7 +46,6 @@ header {
 /*estilos main mobile*/
 /*login*/
 main {
-  /*padding: 1rem 0rem 1rem 0rem;*/
   margin-top: 3.6rem;
   grid-area: main;
   display: flex;
