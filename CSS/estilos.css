@@ -157,7 +157,7 @@ main div h2 {
       .mainAccesos ul li img {
         height: 3rem; }
     .mainAccesos ul li:hover {
-      transform: scale(1.15); }
+      transform: scale(0.9); }
 
 .mainContacto div .divContacto video {
   display: none; }
@@ -199,7 +199,7 @@ footer {
       height: 100%; }
     footer ul .logos {
       display: flex;
-      display: block;
+      display: none;
       flex-wrap: nowrap; }
       footer ul .logos .rrss {
         width: 2rem;
@@ -215,6 +215,9 @@ footer {
 @media (min-width: 600px) {
   /*header*/
   header {
+    position: relative;
+    z-index: 11;
+    display: block;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -224,22 +227,22 @@ footer {
     padding: 0.8rem;
     width: 100%; }
     header nav div h1 {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
     header a img {
       height: 3.3rem; }
   /*main*/
   main {
     margin-top: 0; }
-    main .mainIndex {
+    main .mainLogin {
       width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly; }
-      main .mainIndex .imagenIndex {
+      main .mainLogin .imagenIndex {
         display: block;
         width: 600px; }
-        main .mainIndex .imagenIndex .loguito {
+        main .mainLogin .imagenIndex .loguito {
           width: 70%; }
     main .mainAccesos {
       display: block;
@@ -257,7 +260,7 @@ footer {
       main .lobby h2 {
         border-radius: 3px 3px 3px; }
       main .lobby .carru {
-        width: 90%; }
+        width: 80%; }
     main .mainContacto {
       display: grid;
       grid-template-columns: 1.8fr 2fr;
@@ -292,3 +295,39 @@ footer {
       margin: 0 1rem; }
   footer ul li {
     font-size: 1.5rem; } }
+
+@media (min-width: 1024px) {
+  header {
+    padding: 0.4rem; }
+    header nav div h1 {
+      font-size: 1.2rem; }
+    header a img {
+      height: 1.5rem; }
+  footer {
+    padding: 0.5rem; }
+    footer ul li {
+      font-size: 1.3rem; }
+    footer ul .logos .rrss {
+      width: 1.8rem; }
+  main .mainAccesos ul {
+    gap: 1rem; }
+    main .mainAccesos ul li {
+      width: 17rem;
+      padding: 3rem;
+      gap: 0.5rem; }
+      main .mainAccesos ul li img {
+        height: 3rem; } }
+
+@media (min-width: 1920px) {
+  header {
+    padding: 1rem; }
+    header nav div h1 {
+      font-size: 2.2rem; }
+    header a img {
+      height: 2.5rem; }
+  footer {
+    padding: 1rem; }
+    footer ul li {
+      font-size: 1.7rem; }
+    footer ul .logos .rrss {
+      width: 2.5rem; } }
