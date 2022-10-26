@@ -1,4 +1,9 @@
 /*estilos pantalla completa*/
+@media (max-width: 575px) {
+    .mainSistemas {
+        margin-top: 0rem;
+    }
+}
 @media (min-width: 600px) {
     /*header*/
     header {
