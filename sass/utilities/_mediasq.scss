@@ -29,7 +29,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
-            .imagenIndex {
+            .imagenLogin {
                 display: block;
                 width: 600px;
                 .loguito {
@@ -60,37 +60,12 @@
                 width: 80%;
             }
         }
-        .mainContacto {
-            display: grid;
-            grid-template-columns: 1.8fr 2fr;
-            grid-template-rows: 2fr;
-            grid-template-areas: 
-            "div2 aside2";
-            div {
-                grid-area: div2;
-                .divContacto {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-self: center;
-                    gap: 2rem;
-                    video {
-                        display: block;
-                    }
-                    span {
-                        margin: 1rem;
-                        border-radius: 5px 5px 5px;
-                        p {
-                            font-size: 1.25rem;
-                            text-align: justify;  
-                            color: antiquewhite;
-                        }
-                    }
-                }
+        div {
+            .indexMobile {
+                display: none;
             }
-            aside {
-                grid-area: aside2;
-                text-align: start;
+            .orgLobby div {
+                display: block;
             }
         }
     }
@@ -132,7 +107,41 @@
             }
         }
     }
-    main .mainAccesos {
+    main {
+        .mainContacto {
+            display: grid;
+            grid-template-columns: 1.8fr 2fr;
+            grid-template-rows: 2fr;
+            grid-template-areas: 
+            "div2 aside2";
+            div {
+                grid-area: div2;
+                .divContacto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-self: center;
+                    gap: 2rem;
+                    video {
+                        display: block;
+                    }
+                    span {
+                        margin: 1rem;
+                        border-radius: 5px 5px 5px;
+                        p {
+                            font-size: 1.25rem;
+                            text-align: justify;  
+                            color: antiquewhite;
+                        }
+                    }
+                }
+            }
+            aside {
+                grid-area: aside2;
+                text-align: start;
+            }
+        }
+        .mainAccesos {
             ul {
                 gap: 1rem;
                 li {
@@ -144,7 +153,8 @@
                     }
                 
                 }
-            }  
+            }
+        } 
     }
 
 }

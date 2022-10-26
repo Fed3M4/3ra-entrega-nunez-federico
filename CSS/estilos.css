@@ -51,7 +51,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around; }
-  main div .imagenIndex {
+  main div .imagenLogin {
     display: none;
     width: auto; }
   main div aside {
@@ -99,6 +99,21 @@ main {
         transform: scale(0.9); }
 
 /*estilos index*/
+main div .indexMobile {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  align-items: center; }
+  main div .indexMobile ul {
+    gap: 2rem;
+    list-style: none; }
+    main div .indexMobile ul li a img {
+      margin: 0.5rem;
+      width: 300px; }
+
+main div .orgLobby div {
+  display: none; }
+
 main div span {
   display: flex;
   justify-content: center; }
@@ -239,10 +254,10 @@ footer {
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly; }
-      main .mainLogin .imagenIndex {
+      main .mainLogin .imagenLogin {
         display: block;
         width: 600px; }
-        main .mainLogin .imagenIndex .loguito {
+        main .mainLogin .imagenLogin .loguito {
           width: 70%; }
     main .mainAccesos {
       display: block;
@@ -261,31 +276,10 @@ footer {
         border-radius: 3px 3px 3px; }
       main .lobby .carru {
         width: 80%; }
-    main .mainContacto {
-      display: grid;
-      grid-template-columns: 1.8fr 2fr;
-      grid-template-rows: 2fr;
-      grid-template-areas: "div2 aside2"; }
-      main .mainContacto div {
-        grid-area: div2; }
-        main .mainContacto div .divContacto {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-self: center;
-          gap: 2rem; }
-          main .mainContacto div .divContacto video {
-            display: block; }
-          main .mainContacto div .divContacto span {
-            margin: 1rem;
-            border-radius: 5px 5px 5px; }
-            main .mainContacto div .divContacto span p {
-              font-size: 1.25rem;
-              text-align: justify;
-              color: antiquewhite; }
-      main .mainContacto aside {
-        grid-area: aside2;
-        text-align: start; }
+    main div .indexMobile {
+      display: none; }
+    main div .orgLobby div {
+      display: block; }
   footer ul .logos {
     display: flex;
     display: block;
@@ -309,6 +303,31 @@ footer {
       font-size: 1.3rem; }
     footer ul .logos .rrss {
       width: 1.8rem; }
+  main .mainContacto {
+    display: grid;
+    grid-template-columns: 1.8fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "div2 aside2"; }
+    main .mainContacto div {
+      grid-area: div2; }
+      main .mainContacto div .divContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        gap: 2rem; }
+        main .mainContacto div .divContacto video {
+          display: block; }
+        main .mainContacto div .divContacto span {
+          margin: 1rem;
+          border-radius: 5px 5px 5px; }
+          main .mainContacto div .divContacto span p {
+            font-size: 1.25rem;
+            text-align: justify;
+            color: antiquewhite; }
+    main .mainContacto aside {
+      grid-area: aside2;
+      text-align: start; }
   main .mainAccesos ul {
     gap: 1rem; }
     main .mainAccesos ul li {
